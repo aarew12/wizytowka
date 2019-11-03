@@ -1,0 +1,103 @@
+html {
+  font-size:4vmin;
+}
+
+.menuitem
+{
+	text-align: center;
+	display: block;
+	width: 15vh;
+	height: 15vh;
+	padding: 2vh;
+	border-radius: 3vh;
+	background-color: #434344;
+	color: white;
+	opacity: 0.9;
+	font-size: 0.5rem;
+	box-sizing: border-box;
+	
+	transition: 0.3s;
+}
+
+.menuitem:hover {
+  opacity: 0.6;
+}
+
+
+.menu {
+	width: 20vh; 
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	opacity: 0.9;
+}
+
+#content
+{	
+	text-align: center;
+	padding: 20vh;
+	width: 65vw; 
+	height: 90vh;
+	border-radius: 3vh;
+	background-color: #434344;
+	opacity: 0.9;
+	font-size: 2rem;
+	box-sizing: border-box;
+	color: white;
+}
+.containter
+{
+	width: 95vw; 
+	height: 95vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+	justify-content: space-around;
+	opacity: 0.9;
+	
+}
+@media only screen and (max-width: 768px) {
+  
+  .containter {
+    flex-direction: column;
+	justify-content: space-around;
+  }
+  
+  .menu{
+	  flex-direction: row;
+	  width: 90vw; 
+	  height: 20vw;
+  }
+  
+  #content{
+	  width: 90vw; 
+	  height: 70vh;
+	  padding: 20vw;
+	  border-radius: 3vw;
+  }
+  
+  .menuitem{
+	  width: 15vw;
+	  height: 15vw;
+	  padding: 2vw;
+	  border-radius: 3vw;
+  }
+}
+
+body{
+	
+  font-family: Helvetica;
+  background: linear-gradient(to right, #f1f2b5, #135058); 
+
+
+}
+
+
